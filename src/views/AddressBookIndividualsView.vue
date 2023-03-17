@@ -330,13 +330,10 @@ export default {
      * @param {item} item which will be changed
      */
     editItem(item) {
-      console.log(item);
       this.dialog = true;
       this.editedIndex = this.individuals.indexOf(item);
       this.editedItem = _.cloneDeep(item);
       this.defaultItem = _.cloneDeep(this.editedItem);
-
-      console.log(this.editedItem);
     },
     /**
      * Delete individual
@@ -386,20 +383,15 @@ export default {
      */
     async save() {
       if (this.$refs.form.validate()) {
-        console.log(this.editedItem);
-
         let individual = {
           name: this.editedItem.name.value,
           surname: this.editedItem.surname.value,
-          phone: this.editedItem.phone.value.replaceAll(" ", ""),
+          phone: this.editedItem.phone.value,
           email: this.editedItem.email.value,
           billing_address: {
             street: this.editedItem.billing_address_street.value,
             city: this.editedItem.billing_address_city.value,
-            post_code: this.editedItem.billing_address_post_code.value.replace(
-              " ",
-              ""
-            ),
+            post_code: this.editedItem.billing_address_post_code.value,
           },
           contact_address: null,
         };
@@ -408,10 +400,7 @@ export default {
           individual.contact_address = {
             street: this.editedItem.contact_address_street.value,
             city: this.editedItem.contact_address_city.value,
-            post_code: this.editedItem.contact_address_post_code.value.replace(
-              " ",
-              ""
-            ),
+            post_code: this.editedItem.contact_address_post_code.value,
           };
         }
 
@@ -422,15 +411,12 @@ export default {
             { alert: true }
           );
         } else {
-          const createResponse = await services.post(
-            apiUrls.post.individuals,
-            individual,
-            { alert: true }
-          );
-          console.log(createResponse);
-          this.dialog = false;
-          await this.getIndividuals();
+          await services.post(apiUrls.post.individuals, individual, {
+            alert: true,
+          });
         }
+        this.dialog = false;
+        await this.getIndividuals();
       }
     },
   },
