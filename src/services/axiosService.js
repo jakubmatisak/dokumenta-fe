@@ -4,7 +4,7 @@ import errorHandleService from "@/services/errorHandleService";
 
 const axiosClient = axios.create({
   baseURL: process.env.VUE_APP_API,
-  //withCredentials: process.env.VUE_APP_WITH_CREDENTIALS,
+  // withCredentials: process.env.VUE_APP_WITH_CREDENTIALS,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
