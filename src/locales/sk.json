@@ -1,0 +1,160 @@
+{
+  "menu": {
+    "home": "Domov",
+    "about": "O projekte",
+    "locale": "EN",
+    "title": "Adresár fyzických a právnických osôb"
+  },
+  "about": {
+    "description": "vytvorené: Jakub Matišák, 2023"
+  },
+  "addressBook": {
+    "individuals": "Fyzické osoby",
+    "legal_persons": "Právnické osoby",
+    "headline_individuals": "Adresár fyzických osôb",
+    "headline_legal_persons": "Adresár právnických osôb",
+    "id": "ID",
+    "name": "Meno",
+    "surname" : "Priezvisko",
+    "phone": "Telefónne číslo",
+    "email": "E-mail",
+    "vat_number": "IČ DPH",
+    "tin": "DIČ",
+    "registration_number": "IČO",
+    "create_individual": "Fyzická osoba",
+    "create_legal_person": "Právnická osoba",
+    "create_billing_address": "Fakturačná adresa",
+    "billing_address_street": "Ulica a č.domu",
+    "billing_address_city": "Mesto",
+    "billing_address_post_code": "PSČ",
+    "contact_address_checkbox": "Použiť inú kontaktnú adresu ako je fakturačná",
+    "create_contact_address": "Kontaktná adresa",
+    "contact_address_street": "Ulica a č.domu",
+    "contact_address_city": "Mesto",
+    "contact_address_post_code": "PSČ",
+    "create_office": "Materská spoločnosť",
+    "office": "vybrať spoločnosť"
+  },
+  "actions" : {
+    "actions": "Akcie",
+    "all": "Všetky",
+    "search":"Vyhľadávanie",
+    "save": "Uložiť",
+    "list": "Zoznam",
+    "new": {
+      "new": "Nový záznam",
+      "individual" : "Vytvoriť záznam o fyzickej osobe",
+      "legal_person": "Vytvoriť záznam o právnickej osobe"
+    },
+    "edit": {
+      "edit": "Upraviť",
+      "individual" : "Upraviť záznam o fyzickej osobe",
+      "legal_person": "Upraviť záznam o právnickej osobe"
+    },
+    "ok": "OK",
+    "cancel": "Zrušiť",
+    "close": "Zavrieť",
+    "delete": "Chcete zmazať položku?",
+    "reset": "Obnoviť"
+  },
+  "validations": {
+    "rules": {
+      "required": "Pole nie je vyplnené.",
+      "email": "Email má nesprávny formát.",
+      "phone": "Telefónne číslo má nesprávny formát.",
+      "date": "Dátum má nesprávny formát.",
+      "number": "Sú povolené len čísla 0-9.",
+      "noSpecialChars": "Nie sú povolené špeciálne znaky.",
+      "field": {
+        "minLength": "Minimálna dĺžka poľa musí byť {n} znakov.",
+        "maxLength": "Maximálna dĺžka poľa musí byť {n} znakov.",
+        "exactLength": "Dĺžka poľa musí byť presne {n} znakov."
+      },
+      "file": {
+        "maxSize": "Súbor je príliš veľký. Maximálna veľkosť súbora je {n}MB."
+      },
+      "password": {
+        "minLength": "Minimálna dĺžka hesla je {n} znakov.",
+        "pattern": "Heslo musí obsahovať aspoň jedno veľké písmeno, číslo a špeciálny znak.",
+        "equal": "Heslá sa musia zhodovať."
+      }
+    }
+  },
+  "statusCodes": {
+    "200": {
+      "get": "Dáta boli úspešne načítané.",
+      "post": "Dáta boli úspešne uložené",
+      "put": "Dáta boli úspešne upravené.",
+      "delete": "Dáta boli úspešne vymazané"
+    },
+    "201": {
+      "get": "Záznam bol úspešne načítaný.",
+      "post": "Záznam bol úspešne vytvorený.",
+      "put": "Záznam bol úspešne upravený.",
+      "delete": "Záznam bol úspešne vymazaný."
+    },
+    "204": {
+      "get": "Požadované dáta neexistujú.",
+      "post": "Požadované dáta neexistujú.",
+      "put": "Požadované dáta neexistujú.",
+      "delete": "Požadované dáta neexistujú."
+    },
+    "400": {
+      "get": "Neplatné parametre.",
+      "post": "Neplatné parametre.",
+      "put": "Neplatné parametre.",
+      "delete": "Neplatné parametre."
+    },
+    "401": {
+      "unauthorized": "Boli ste odhlasený.",
+      "incorrect": "Zadali ste nesprávne prihlasovacie údaje."
+    },
+    "403": {
+      "get": "Nedostatočné práva na načítanie záznamu.",
+      "post": "Nedostatočné práva na vytvorenie záznamu.",
+      "put": "Nedostatočné práva na úpravu záznamu.",
+      "delete": "Nedostatočné práva na vymazanie záznamu."
+    },
+    "404": {
+      "get": "Požadovaná stránka nebola nájdená.",
+      "post": "Požadovaná stránka nebola nájdená.",
+      "put": "Požadovaná stránka nebola nájdená.",
+      "delete": "Požadovaná stránka nebola nájdená."
+    },
+    "405": {
+      "get": "Metóda nie je povolená.",
+      "post": "Vytváranie záznamov nie je povolené.",
+      "put": "Úprava záznamov nie je povolená.",
+      "delete": "Mazanie záznamov nie je povolené."
+    },
+    "413": {
+      "get": "Požiadavka bola väčšia, ako server dokáže spracovať.",
+      "post": "Požiadavka bola väčšia, ako server dokáže spracovať.",
+      "put": "Požiadavka bola väčšia, ako server dokáže spracovať.",
+      "delete": "Požiadavka bola väčšia, ako server dokáže spracovať."
+    },
+    "415": {
+      "get": "Nepodporovaný typ/formát súboru.",
+      "post": "Nepodporovaný typ/formát súboru.",
+      "put": "Nepodporovaný typ/formát súboru."
+    },
+    "498": {
+      "get": "Platnosť tokenu vypršala alebo je neplatný.",
+      "post": "Platnosť tokenu vypršala alebo je neplatný.",
+      "put": "Platnosť tokenu vypršala alebo je neplatný.",
+      "delete": "Platnosť tokenu vypršala alebo je neplatný."
+    },
+    "500": {
+      "get": "Interná chyba servera.",
+      "post": "Interná chyba servera.",
+      "put": "Interná chyba servera.",
+      "delete": "Interná chyba servera."
+    },
+    "522": {
+      "get": "Časový limit pripojenia vypršal.",
+      "post": "Časový limit pripojenia vypršal.",
+      "put": "Časový limit pripojenia vypršal.",
+      "delete": "Časový limit pripojenia vypršal."
+    }
+  }
+}

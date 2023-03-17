@@ -1,0 +1,24 @@
+{
+  "get": {
+    "individuals": "api/individuals",
+    "addresses": "api/addresses",
+    "legal_persons": "api/legal-persons",
+    "legal_persons_checklist": "api/legal-persons/checklist",
+    "offices": "api/offices"
+  },
+  "post": {
+    "individuals": "api/individuals",
+    "addresses": "api/addresses",
+    "legal_persons": "api/legal-persons"
+  },
+  "put": {
+    "individuals": "api/individuals/",
+    "addresses": "api/addresses/",
+    "legal_persons": "api/legal-persons/"
+  },
+  "delete": {
+    "individuals": "api/individuals/",
+    "addresses": "api/addresses/",
+    "legal_persons": "api/legal-persons/"
+  }
+}

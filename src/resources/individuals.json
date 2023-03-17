@@ -1,0 +1,136 @@
+{
+  "item": {
+    "create_individual": {
+      "type": "headline"
+    },
+    "name": {
+      "value": null,
+      "rules": [
+        "required",
+        "maxField-50"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 50,
+      "mask": null
+    },
+    "surname": {
+      "value": null,
+      "rules": [
+        "required",
+        "maxField-100"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 100,
+      "mask": null
+    },
+    "phone": {
+      "value": null,
+      "rules": [
+        "required",
+        "maxField-13",
+        "minField-12"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 13,
+      "mask": "+############"
+    },
+    "email": {
+      "value": null,
+      "rules": [
+        "required",
+        "maxField-100",
+        "email"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 100,
+      "mask": null
+    },
+    "create_billing_address": {
+      "type": "headline"
+    },
+    "billing_address_street": {
+      "value": null,
+      "rules": [
+        "required",
+        "maxField-50"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 50,
+      "mask": null
+    },
+    "billing_address_city": {
+      "value": null,
+      "rules": [
+        "required",
+        "maxField-50"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 50,
+      "mask": null
+    },
+    "billing_address_post_code": {
+      "value": null,
+      "rules": [
+        "required",
+        "maxField-5",
+        "minField-5"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 5,
+      "mask": "#####"
+    },
+    "contact_address_checkbox": {
+      "name": "contact_address",
+      "type": "checkbox",
+      "default": false
+    },
+    "create_contact_address": {
+      "type": "headline",
+      "contact_address": true
+    },
+    "contact_address_street": {
+      "contact_address": true,
+      "value": null,
+      "rulesOptional": [
+        "maxField-50",
+        "required"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 50,
+      "mask": null
+    },
+    "contact_address_city": {
+      "contact_address": true,
+      "value": null,
+      "rulesOptional": [
+        "maxField-50",
+        "required"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 50,
+      "mask": null
+    },
+    "contact_address_post_code": {
+      "contact_address": true,
+      "value": null,
+      "rulesOptional": [
+        "maxField-5",
+        "minField-5",
+        "required"
+      ],
+      "disabled": false,
+      "type": "text",
+      "counter": 5,
+      "mask": "#####"
+    }
+  }
+}

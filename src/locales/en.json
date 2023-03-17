@@ -1,0 +1,160 @@
+{
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "locale": "EN",
+    "title": "Address book of Individuals and Legal Forms"
+  },
+  "about": {
+    "description": "created: Jakub Matišák, 2023"
+  },
+  "addressBook": {
+    "individuals": "Individuals",
+    "legal_persons": "Legal Forms",
+    "headline_individuals": "Address Book of Individuals",
+    "headline_legal_persons": "Address Book of Legal Person",
+    "id": "ID",
+    "name": "Name",
+    "surname" : "Surname",
+    "phone": "Phone Number",
+    "email": "E-mail",
+    "vat_number": "VAT",
+    "tin": "Tax Identification Number",
+    "registration_number": "Registration Number",
+    "create_individual": "Individual",
+    "create_legal_person": "Legal Person",
+    "create_billing_address": "Business Address",
+    "billing_address_street": "Street and house number",
+    "billing_address_city": "City",
+    "billing_address_post_code": "Post code",
+    "contact_address_checkbox": "Contact me on different address as business",
+    "create_contact_address": "Contact address",
+    "contact_address_street": "Street and house number",
+    "contact_address_city": "City",
+    "contact_address_post_code": "Post code",
+    "create_office": "Parent company",
+    "office": "Choose company"
+  },
+  "actions" : {
+    "actions": "Actions",
+    "all": "All",
+    "search":"Search",
+    "save": "Save",
+    "list": "List",
+    "new": {
+      "new": "New",
+      "individual" : "Create new Individual",
+      "legal_person": "Create new Legal Person"
+    },
+    "edit": {
+      "edit": "Edit",
+      "individual" : "Edit Individual",
+      "legal_person": "Edit Legal Person"
+    },
+    "ok": "OK",
+    "cancel": "Cancel",
+    "close": "Close",
+    "delete": "Delete?",
+    "reset": "Reload"
+  },
+  "validations": {
+    "rules": {
+      "required": "The field is not filled",
+      "email": "The email format is incorrect.",
+      "phone": "The phone number format is incorrect.",
+      "date": "The date format is incorrect.",
+      "number": "Only numbers 0-9 are allowed.",
+      "noSpecialChars": "No special characters allowed.",
+      "field": {
+        "minLength": "The minimum field length must be {n} characters.",
+        "maxLength": "The maximum field length must be {n} characters.",
+        "exactLength": "The length of the field must be exactly {n} characters."
+      },
+      "file": {
+        "maxSize": "The file is too large. The maximum file size is {n}MB."
+      },
+      "password": {
+        "minLength": "The minimum password length is {n} characters.",
+        "pattern": "Password must contain at least one capital letter, number and special character.",
+        "equal": "Passwords must match."
+      }
+    }
+  },
+  "statusCodes": {
+    "200": {
+      "get": "The data has been retrieved successfully.",
+      "post": "The data has been saved successfully.",
+      "put": "The data has been edited successfully.",
+      "delete": "The data has been deleted successfully."
+    },
+    "201": {
+      "get": "The record has been loaded successfully.",
+      "post": "The record has been created successfully.",
+      "put": "The record has been edited successfully.",
+      "delete": "The record has been deleted successfully."
+    },
+    "204": {
+      "get": "The requested data do not exist.",
+      "post": "The requested data do not exist.",
+      "put": "The requested data do not exist.",
+      "delete": "The requested data do not exist."
+    },
+    "400": {
+      "get": "The server was unable to process the request due to invalid input.",
+      "post": "The server was unable to process the request due to invalid input.",
+      "put": "The server was unable to process the request due to invalid input.",
+      "delete": "The server was unable to process the request due to invalid input."
+    },
+    "401": {
+      "unauthorized": "You have been logged off.",
+      "incorrect": "You have entered incorrect credentials."
+    },
+    "403": {
+      "get": "Insufficient rights to retrieve the record.",
+      "post": "Insufficient rights to create the record.",
+      "put": "Insufficient rights to edit the record.",
+      "delete": "Insufficient rights to delete the record."
+    },
+    "404": {
+      "get": "Page not found.",
+      "post": "Page not found.",
+      "put": "Page not found.",
+      "delete": "Page not found."
+    },
+    "405": {
+      "get": "Method is not allowed.",
+      "post": "Creating records is not allowed.",
+      "put": "Editing records is not allowed.",
+      "delete": "Deleting records is not allowed."
+    },
+    "413": {
+      "get": "The request was larger than the server can handle.",
+      "post": "The request was larger than the server can handle.",
+      "put": "The request was larger than the server can handle.",
+      "delete": "The request was larger than the server can handle."
+    },
+    "415": {
+      "get": "Unsupported file type/format.",
+      "post": "Unsupported file type/format.",
+      "put": "Unsupported file type/format."
+    },
+    "498": {
+      "get": "The token has expired or is invalid.",
+      "post": "The token has expired or is invalid.",
+      "put": "The token has expired or is invalid.",
+      "delete": "The token has expired or is invalid."
+    },
+    "500": {
+      "get": "Internal server error.",
+      "post": "IInternal server error.",
+      "put": "Internal server error.",
+      "delete": "Internal server error."
+    },
+    "522": {
+      "get": "The connection time limit has expired.",
+      "post": "The connection time limit has expired.",
+      "put": "The connection time limit has expired.",
+      "delete": "The connection time limit has expired."
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.png">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
+    <title>Dokumenta - adresár osôb</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+
+    <div id="browserError" style="margin: 1rem; text-align: justify; display: none;">
+        <h1>Vážený používateľ, používate nepodporovaný prehliadač, jednotlivé funkcie preto nemusia fungovať správne. Pre korektné
+            fungovanie aplikácie použite, prosím, iný z moderných prehliadačov (napr. Google Chrome, Microsoft Edge, ..).
+            Ospravedlňujeme sa za spôsobené problémy.
+        </h1>
+    </div>
+
+    <script>
+        if (
+            /MSIE 9/i.test(navigator.userAgent) ||
+            /MSIE 10/i.test(navigator.userAgent) ||
+            /rv:11.0/i.test(navigator.userAgent) ) {
+            // This is internet explorer 9, 10, 11
+            document.getElementById("browserError").style.display = "block";
+        }
+    </script>
+
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
